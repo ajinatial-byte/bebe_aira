@@ -13,12 +13,12 @@ declineBtn.addEventListener("click", () => {
 
     alert("⚠️ Error");
     alert("❌ Invalid Choice");
-    alert("💖 Please try again");
-
-    const maxX = window.innerWidth - declineBtn.offsetWidth;
-    const maxY = window.innerHeight - declineBtn.offsetHeight;
 
     declineBtn.style.position = "absolute";
-    declineBtn.style.left = Math.random() * maxX + "px";
-    declineBtn.style.top = Math.random() * maxY + "px";
+
+    declineBtn.style.left =
+        Math.random() * (window.innerWidth - 150) + "px";
+
+    declineBtn.style.top =
+        Math.random() * (window.innerHeight - 100) + "px";
 });
